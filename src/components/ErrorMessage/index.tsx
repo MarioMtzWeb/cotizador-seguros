@@ -1,0 +1,16 @@
+
+interface Props {
+    message: string;
+}
+
+const ErrorMessage = ({ message }: Props) => {
+  return (
+    <div className="border text-center border-red-400 bg-red-100 py-3 text-red-700">
+        <p>
+            { message }
+        </p>
+    </div>
+  )
+}
+
+export { ErrorMessage };
